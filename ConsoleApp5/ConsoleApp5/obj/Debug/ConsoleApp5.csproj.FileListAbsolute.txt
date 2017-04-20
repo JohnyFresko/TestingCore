@@ -1,0 +1,5 @@
+C:\Users\johny\Documents\GitHub\TestingCore\ConsoleApp5\ConsoleApp5\bin\Debug\ConsoleApp5.exe.config
+C:\Users\johny\Documents\GitHub\TestingCore\ConsoleApp5\ConsoleApp5\bin\Debug\ConsoleApp5.exe
+C:\Users\johny\Documents\GitHub\TestingCore\ConsoleApp5\ConsoleApp5\bin\Debug\ConsoleApp5.pdb
+C:\Users\johny\Documents\GitHub\TestingCore\ConsoleApp5\ConsoleApp5\obj\Debug\ConsoleApp5.exe
+C:\Users\johny\Documents\GitHub\TestingCore\ConsoleApp5\ConsoleApp5\obj\Debug\ConsoleApp5.pdb
