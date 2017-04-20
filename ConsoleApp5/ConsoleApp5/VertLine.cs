@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5
 {
-    class HorisontLine:figure
+    class VertLine:figure
     {
         
-        public HorisontLine(int xLeft,int xRight,int y,char sym)
+      public VertLine(int yUp, int yDown, int x, char sym)
         {
             pList = new List<Point>();
-            for (int x=xLeft; x<=xRight; x++)
+            for (int y = yUp; y <= yDown; y++)
             {
                 Point p = new Point(x, y, sym);
                 pList.Add(p);
             }
         }
-       
+        
 
-    }    
-    
-  }
+    }
+}
 

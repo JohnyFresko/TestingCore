@@ -8,6 +8,7 @@ namespace ConsoleApp5
 {
     class Program
     {
+       
         /// <summary>
         /// /*Draw(p1.x, p1.y, p1.sym);*/
         /*int x1 = 1;
@@ -50,15 +51,22 @@ namespace ConsoleApp5
         /// 
 
         static void Main(string[] args)
+            
         {
+            Console.SetBufferSize(200, 225);
             Point p1 = new Point(1,3,'*');          
             p1.Draw();     
             Point p2 = new Point(4,5,'#');           
             p2.Draw();
 
-            HorisontLine line = new HorisontLine(5, 10, 8, '+');
-            line.Drow();
-           
+            HorisontLine upline = new HorisontLine(0, 78, 0, '+');
+            upline.Drow();
+            HorisontLine downline = new HorisontLine(0, 78, 24, '+');
+            downline.Drow();
+            VertLine leftline = new VertLine(0, 24, 0, '+');
+             leftline.Drow();
+            VertLine rightline = new VertLine(0, 24, 78, '+');
+            rightline.Drow();           
 
 
             Console.ReadLine();
