@@ -11,7 +11,8 @@ namespace ConsoleApp5
         public int x;
         public int y;
         public char sym;
-        public Point(int _x,int _y,char _sym)
+
+        public Point(int _x, int _y, char _sym)
         {
             x = _x;
             y = _y;
@@ -24,7 +25,7 @@ namespace ConsoleApp5
             sym = p.sym;
 
         }
-        public void Move(int offset,Direction direction)
+        public void Move(int offset, Direction direction)
         {
             if (direction == Direction.RIGHT)
             {
@@ -36,25 +37,33 @@ namespace ConsoleApp5
             }
             else if (direction == Direction.UP)
             {
-                y = y + offset;
+                y = y - offset;
             }
             else if (direction == Direction.DOWN)
-                    {
-                y = y - offset;
+            {
+                y = y + offset;
             }
         }
 
 
         public void Draw()
         {
-         Console.SetCursorPosition(x, y);
-                Console.Write(sym);}
-
+            Console.SetCursorPosition(x, y);
+            Console.Write(sym);
         }
-    public override string To
-    {
-        return x + ", " + y + "," + sym;
+        public void Clear()
+        {
+            sym = ' ';
+            Draw();
+        }
+        public override string ToString()
+        {
+            return x + ", " + y + "," + sym;
+        }
     }
+}
 
-    }
+    
+
+   
 

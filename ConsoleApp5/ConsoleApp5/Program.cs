@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ConsoleApp5
@@ -72,9 +73,21 @@ namespace ConsoleApp5
             Point p = new Point(4, 5, '*');
             Snake snake = new Snake(p, 4, Direction.RIGHT);
             snake.Drow();
+            
             //DrawpointStop
+            while (true) 
+            {
+                if(Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    snake.ControlKey(key.Key);
 
-            Console.ReadLine();
+                }
+                Thread.Sleep(100);
+                snake.Move();
+            }
+
+            //Console.ReadLine();
         }
          
     }
