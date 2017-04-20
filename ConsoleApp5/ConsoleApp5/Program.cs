@@ -58,7 +58,7 @@ namespace ConsoleApp5
             p1.Draw();     
             Point p2 = new Point(4,5,'#');           
             p2.Draw();
-
+            //Start Panel
             HorisontLine upline = new HorisontLine(0, 78, 0, '+');
             upline.Drow();
             HorisontLine downline = new HorisontLine(0, 78, 24, '+');
@@ -66,8 +66,13 @@ namespace ConsoleApp5
             VertLine leftline = new VertLine(0, 24, 0, '+');
              leftline.Drow();
             VertLine rightline = new VertLine(0, 24, 78, '+');
-            rightline.Drow();           
-
+            rightline.Drow();
+            //Panel End
+            //DrawPoint Start
+            Point p = new Point(4, 5, '*');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Drow();
+            //DrawpointStop
 
             Console.ReadLine();
         }
